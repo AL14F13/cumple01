@@ -47,12 +47,21 @@ fecha_actual = new Date (fecha_actual.getFullYear(),fecha_actual.getMonth(),fech
 	});
 //}); 
 
-$('#comenzar').on ('click', function(){
-$('#comenzar').on('tap',function(){
+  $('#comenzar').on('tap',function(){
 	navigator.vibrate(1000);
-});//tap a btnvibrar
+  });//tap a btnvibrar
+  
+  
+  $('#comenzar').on('tap',function(){
+	navigator.notification.beep(1);
+	txt=clear()
+  });//tap a btnbeep
+  
+
+  
 	
 });
 
-});
+
+
 
